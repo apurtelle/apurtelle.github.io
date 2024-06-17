@@ -53,6 +53,12 @@
     padding: 20px 20px;
     margin: 10px;
 }
+.main-btn:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.main-btn:active {
+    transform: translateY(5px);
+}
 #playback {
     background-color: blue;
 }
