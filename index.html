@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<!-- 
+		Group members for group #8:
+		Mandeep Singh - 200549270
+		Allison Noseworthy - 200561039
+		Allie Purtelle - 200566297
+	-->
+
+
+
+	<div id="random-word-button-container">
+		<!-- Buttons for choosing from the lists of phrases -->
+		<button class="random-word-btn" id="random-word-1">1</button>
+		<button class="random-word-btn" id="random-word-2">2</button>
+		<button class="random-word-btn" id="random-word-3">3</button>
+		<button class="random-word-btn" id="random-word-4">4</button>
+		<button class="random-word-btn" id="random-word-5">5</button>
+	</div>
+
+
+
+	<div id="main-button-container">
+		<!-- Play the currently loaded story out loud -->
+		<button class="main-btn" id="playback">Playback</button>
+
+		<!-- Generate a random story and play it out loud -->
+		<button class="main-btn" id="surprise-me">Surprise me!</button>
+
+		<!-- Reset the story back to a blank slate -->
+		<button class="main-btn" id="reset">Reset</button>
+	</div>
+	
+
+
+	<div id="story-text-container">
+		<!-- Contains the phrases making up the current story - updates as you add words -->
+		<p id="story-label">Your story: </p>
+		<p id="story-text"></p>
+	</div>
+	
+
+
+	<!-- JavaScript source file -->
+	<script src="js/app.js"></script>
+</body>
+</html>
