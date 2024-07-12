@@ -1,0 +1,47 @@
+<!-- Below, please list all group members' full names and student IDs. -->
+ <!--Allie Purtelle : 200566297 , Mandeep Singh : 200549270, Allison Noseworthy : 200561039
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Image Gallery | COMP1073 Client-Side JavaScript</title>
+	<link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+	<h1>Image Gallery</h1>
+	<section id="gallery">
+		<figure>
+			<!--empty and filler tags for future actions-->
+			<img src="" alt="" id="biggerImage" width="1200" height="800" />
+			<figcaption id="figcaption">Image Description</figcaption>
+		</figure>
+		<!--When click on smaller image must change the top image to that selected and change its caption-->
+		<ul>
+			<!--has arguments included on the onclick to change the items within the figure tag-->
+			<li><img src="images/flowers-pink-small.jpg" alt="small pink flower" width="240" height="160" onclick="changeToBiggerImage('images/flowers-pink-large.jpg', 'It is said that pink flowers symbolize affection and love, ranging from friendship to marital attachment to gratitude.')"/></li>
+			<li><img src="images/flowers-purple-small.jpg" alt="small purple flower" id="purple flower" width="240" height="160" onclick="changeToBiggerImage('images/flowers-purple-large.jpg', 'It is said that purple flowers symbolize royalty, luxury, creativity, inspiration, and spirituality.')" /></li>
+			<li><img src="images/flowers-red-small.jpg" alt="small red flower" id="red flower" width="240" height="160" onclick="changeToBiggerImage('images/flowers-red-large.jpg', 'It is said that red flowers based on there different types have different meanings but the colour itself is associated with energy, power, and determination.')" /></li>
+			<li><img src="images/flowers-white-small.jpg" alt="small white flower" id="white flower" width="240" height="160" onclick="changeToBiggerImage('images/flowers-white-large.jpg', 'It is said that white flowers can symbolize innocence, purity, hope, new beginnings and respect.')" /></li>
+			<li><img src="images/flowers-yellow-small.jpg" alt="small yellow flower" id="yellow flower" width="240" height="160" onclick="changeToBiggerImage('images/flowers-yellow-large.jpg', 'It is said that yellow flowers are associated with positivity, joy, friendship, pride, truth, and enlightenment and it is lead to believe they bring good luck, fortune, and abundance.')" /></li>
+		</ul>
+	</section>
+	<script src="js/gallery.js"></script>
+	<!-- PHOTO CREDITS
+	Sunflowers in the hamlet Dernekamp, Kirchspiel, Dülmen, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61514522
+
+	Poppies in cornfield, Dülmen, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=40957238
+
+	Daffodils in Sentmaring park, Münster, North Rhine-Westfalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48211466
+
+	Sentmaring Park, Münster, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48576226
+
+	Market in Münster, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=62071586
+	-->
+</body>
+</html>
